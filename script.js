@@ -59,8 +59,8 @@ function createMainContent() {
     return `
         <div class="container">
             <div class="header" data-aos="fade-down" data-aos-duration="800">
-                <h1 class="logo">💀 HACK <span class="logo-badge">PRO</span> FOLLOWERS 💀</h1>
-                <p class="tagline">✨ خدمات رقمية احترافية - دعم فوري 24/7 ✨</p>
+                <h1 class="logo"> HACK <span class="logo-badge">PRO</span> FOLLOWERS </h1>
+                <p class="tagline">✨ سرڤر سريع ورخيص - دعم فوري 24/7 ✨</p>
             </div>
             <div class="filter-buttons" data-aos="fade-up" data-aos-duration="600">
                 <button class="filter-btn active" data-filter="all">الكل</button>
@@ -90,7 +90,7 @@ function createMainContent() {
             </div>
         </div>
         <footer data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
-            <p>© 2025 HACK FOLLOWERS | جميع الحقوق محفوظة</p>
+            <p>© 2026 HACK FOLLOWERS | جميع الحقوق محفوظة</p>
             <div class="developer">✨ تم التطوير بواسطة كريم احمد ✨</div>
         </footer>
     `;
