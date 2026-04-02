@@ -11,8 +11,8 @@ const whatsappFloat = document.getElementById('whatsappFloat');
 
 const allServices = [
     // فيسبوك
-    { name: "📌 متابعين فيسبوك", price: "10", icon: "fab fa-facebook", category: "facebook", description: "✅ متابعين حقيقيين نشطين ✅ زيادة التفاعل ✅ نتائج فورية", needsQuantity: true, pricePer1000: 10, platform: "facebook" },
-    { name: "📌 متابعين فيسبوك صفحة", price: "25", icon: "fas fa-thumbs-up", category: "facebook", description: "✅ متابعين للصفحات الرسمية ✅ وصول عالمي ✅ زيادة الثقة", needsQuantity: true, pricePer1000: 10, platform: "facebook" },
+    { name: "📌 متابعين فيسبوك", price: "15", icon: "fab fa-facebook", category: "facebook", description:" متابعين حقيقيين نشطين ✅ هناك عروض للكميات", needsQuantity: true, pricePer1000: 10, platform: "facebook" },
+    { name: "📌 متابعين فيسبوك صفحة", price: "30", icon: "fas fa-thumbs-up", category: "facebook", description: "✅ متابعين للصفحات الرسمية ✅ وصول عالمي ✅ زيادة الثقة", needsQuantity: true, pricePer1000: 10, platform: "facebook" },
     { name: "❤️ لايكات منشورات فيسبوك", price: "20", icon: "fas fa-heart", category: "facebook", description: "✅ لايكات حقيقية ✅ زيادة وصول المنشورات ✅ تفاعل طبيعي", needsQuantity: true, pricePer1000: 15, platform: "facebook" },
     { name: "👀 مشاهدات فيديو فيسبوك", price: "5", icon: "fas fa-play", category: "facebook", description: "✅ مشاهدات حقيقية ✅ زيادة تفاعل الفيديو ✅ تحسين الترتيب", needsQuantity: true, pricePer1000: 8, platform: "facebook" },
     { name: "💬 تعليقات فيسبوك", price: "140", icon: "fas fa-comment", category: "facebook", description: "✅ تعليقات مميزة ✅ زيادة التفاعل ✅ تعزيز المصداقية", needsQuantity: true, pricePer1000: 20, platform: "facebook" },
