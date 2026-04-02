@@ -11,7 +11,7 @@ const whatsappFloat = document.getElementById('whatsappFloat');
 
 const allServices = [
     // فيسبوك
-    { name: "📌 متابعين فيسبوك", price: "15", icon: "fab fa-facebook", category: "facebook", description:" متابعين حقيقيين نشطين ✅ هناك عروض للكميات", needsQuantity: true, pricePer1000: 10, platform: "facebook" },
+    { name: "📌 متابعين فيسبوك", price: "130", icon: "fab fa-facebook", category: "facebook", description: "✅ متابعين حقيقيين نشطين ✅ عرض خاص: 10000 متابع ب 130 جنيه", needsQuantity: true, pricePer1000: 15, platform: "facebook" },
     { name: "📌 متابعين فيسبوك صفحة", price: "30", icon: "fas fa-thumbs-up", category: "facebook", description: "✅ متابعين للصفحات الرسمية ✅ وصول عالمي ✅ زيادة الثقة", needsQuantity: true, pricePer1000: 10, platform: "facebook" },
     { name: "❤️ لايكات منشورات فيسبوك", price: "20", icon: "fas fa-heart", category: "facebook", description: "✅ لايكات حقيقية ✅ زيادة وصول المنشورات ✅ تفاعل طبيعي", needsQuantity: true, pricePer1000: 15, platform: "facebook" },
     { name: "👀 مشاهدات فيديو فيسبوك", price: "5", icon: "fas fa-play", category: "facebook", description: "✅ مشاهدات حقيقية ✅ زيادة تفاعل الفيديو ✅ تحسين الترتيب", needsQuantity: true, pricePer1000: 8, platform: "facebook" },
@@ -20,7 +20,7 @@ const allServices = [
     { name: "🎥 مشاهدات بث مباشر فيسبوك", price: "50", icon: "fas fa-video", category: "facebook", description: "✅ مشاهدات بث مباشر ✅ زيادة التفاعل المباشر", needsQuantity: true, pricePer1000: 5, platform: "facebook" },
     
     // انستقرام
-    { name: "📷 متابعين انستقرام", price: "25", icon: "fab fa-instagram", category: "instagram", description: "✅ متابعين انستقرام حقيقيين ✅ زيادة ظهور الحساب ✅ متابعين نشطين", needsQuantity: true, pricePer1000: 20, platform: "instagram" },
+    { name: "📷 متابعين انستقرام", price: "25", icon: "fab fa-instagram", category: "instagram", description: "✅ متابعين انستقرام حقيقيين ✅ عروض خاصة على الكميات", needsQuantity: true, pricePer1000: 20, platform: "instagram" },
     { name: "❤️ لايكات انستقرام", price: "10", icon: "far fa-heart", category: "instagram", description: "✅ لايكات سريعة ✅ زيادة التفاعل ✅ تحسين ترتيب المنشورات", needsQuantity: true, pricePer1000: 7, platform: "instagram" },
     { name: "👀 مشاهدات ريلز انستقرام", price: "3", icon: "fas fa-film", category: "instagram", description: "✅ مشاهدات ريلز حقيقية ✅ زيادة الوصول ✅ انتشار سريع", needsQuantity: true, pricePer1000: 5, platform: "instagram" },
     { name: "👁️ مشاهدات ستوري انستقرام", price: "5", icon: "fas fa-eye", category: "instagram", description: "✅ مشاهدات ستوري ✅ زيادة التفاعل اليومي", needsQuantity: true, pricePer1000: 4, platform: "instagram" },
@@ -29,7 +29,7 @@ const allServices = [
     { name: "🔗 زيارات بروفايل انستقرام", price: "10", icon: "fas fa-user", category: "instagram", description: "✅ زيارات بروفايل ✅ زيادة الوعي بالحساب", needsQuantity: true, pricePer1000: 6, platform: "instagram" },
     
     // تيك توك
-    { name: "🎵 متابعين تيك توك", price:"،100", icon: "fab fa-tiktok", category: "tiktok", description: "✅ متابعين تيك توك حقيقيين ✅ زيادة ظهور الفيديوهات ✅ نمو سريع", needsQuantity: true, pricePer1000: 25, platform: "tiktok" },
+    { name: "🎵 متابعين تيك توك", price: "100", icon: "fab fa-tiktok", category: "tiktok", description: "✅ متابعين تيك توك حقيقيين ✅ زيادة ظهور الفيديوهات ✅ نمو سريع", needsQuantity: true, pricePer1000: 25, platform: "tiktok" },
     { name: "❤️ لايكات تيك توك", price: "5", icon: "fas fa-heart", category: "tiktok", description: "✅ لايكات حقيقية ✅ زيادة التفاعل ✅ تحسين الترتيب", needsQuantity: true, pricePer1000: 8, platform: "tiktok" },
     { name: "👀 مشاهدات تيك توك", price: "5", icon: "fas fa-play", category: "tiktok", description: "✅ مشاهدات فيديو ✅ انتشار أسرع ✅ وصول أكبر", needsQuantity: true, pricePer1000: 4, platform: "tiktok" },
     { name: "🎥 مشاهدات بث مباشر تيك توك", price: "5", icon: "fas fa-video", category: "tiktok", description: "✅ مشاهدات بث مباشر ✅ زيادة التفاعل المباشر", needsQuantity: true, pricePer1000: 6, platform: "tiktok" },
@@ -158,7 +158,6 @@ function createMainContent() {
                 <p class="tagline">✨ أرخص الأسعار، أسرع النتائج - دعم فوري 24/7 ✨</p>
             </div>
             
-            <!-- القائمة المنسدلة الرئيسية -->
             <div class="main-dropdown">
                 <div class="dropdown-main">
                     <button class="dropbtn-main" id="dropdownMainBtn">
@@ -178,7 +177,6 @@ function createMainContent() {
                 </div>
             </div>
             
-            <!-- أفضل العروض -->
             <div id="featuredSection">
                 <div class="section-title" data-aos="fade-up">
                     <i class="fas fa-crown"></i>
@@ -187,14 +185,12 @@ function createMainContent() {
                 <div class="featured-grid" id="featuredGrid"></div>
             </div>
             
-            <!-- قسم الخدمات حسب الاختيار (يظهر عند اختيار قسم) -->
             <div id="platformServicesSection" style="display: none;">
                 <div class="section-title" data-aos="fade-up" id="platformTitle">
                     <i class="fas fa-th-large"></i>
                     <span id="platformTitleText">الخدمات</span>
                 </div>
                 <div class="services-grid" id="servicesGrid"></div>
-                <!-- زر العودة للرئيسية -->
                 <div style="text-align: center; margin: 1rem 0;">
                     <button onclick="goBackToHome()" class="submit-btn" style="background: linear-gradient(135deg, #00c6fb, #005bea); width: auto; padding: 0.5rem 1.5rem;">
                         <i class="fas fa-arrow-right"></i> العودة للرئيسية
@@ -262,13 +258,10 @@ function renderFeatured() {
 }
 
 function selectPlatform(platform) {
-    // إغلاق القائمة المنسدلة
     const dropdownContent = document.getElementById('mainDropdownContent');
     if (dropdownContent) {
         dropdownContent.style.display = 'none';
     }
-    
-    // عرض الخدمات الخاصة بالقسم
     showPlatform(platform);
 }
 
@@ -278,10 +271,8 @@ function showPlatform(platform) {
     const platformName = getPlatformName(platform);
     const platformIcon = getPlatformIcon(platform);
     
-    // تغيير عنوان القسم
     document.getElementById('platformTitleText').innerHTML = `<i class="${platformIcon}"></i> ${platformName}`;
     
-    // عرض بطاقات الخدمات
     const grid = document.getElementById('servicesGrid');
     grid.innerHTML = services.map((s, i) => {
         const isSpecial = s.price === "حسب الاختيار";
@@ -312,32 +303,25 @@ function showPlatform(platform) {
         `;
     }).join('');
     
-    // إخفاء أفضل العروض
     const featuredSection = document.getElementById('featuredSection');
     if (featuredSection) featuredSection.style.display = 'none';
     
-    // إظهار قسم الخدمات
     const platformSection = document.getElementById('platformServicesSection');
     if (platformSection) platformSection.style.display = 'block';
     
-    // تمرير سلس إلى القسم
     platformSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function goBackToHome() {
-    // إظهار أفضل العروض مرة أخرى
     const featuredSection = document.getElementById('featuredSection');
     if (featuredSection) featuredSection.style.display = 'block';
     
-    // إخفاء قسم الخدمات
     const platformSection = document.getElementById('platformServicesSection');
     if (platformSection) platformSection.style.display = 'none';
     
-    // تمرير سلس إلى الأعلى
     window.scrollTo({ behavior: 'smooth', top: 0 });
 }
 
-// إضافة حدث لإغلاق القائمة عند النقر خارجها
 function setupDropdownClose() {
     const dropdownBtn = document.getElementById('dropdownMainBtn');
     const dropdownContent = document.getElementById('mainDropdownContent');
@@ -352,7 +336,6 @@ function setupDropdownClose() {
             }
         });
         
-        // إغلاق القائمة عند النقر خارجها
         document.addEventListener('click', (e) => {
             if (!dropdownBtn.contains(e.target) && !dropdownContent.contains(e.target)) {
                 dropdownContent.style.display = 'none';
@@ -653,7 +636,6 @@ function createParticles() {
 }
 createParticles();
 
-// زر الدخول
 const enterBtn = document.getElementById('enterBtn');
 enterBtn.addEventListener('click', () => {
     quranAudio = new Audio('https://server6.mp3quran.net/wdee3/040.mp3');
