@@ -1,4 +1,4 @@
-herelet visitorCount = localStorage.getItem('visitorCount') ? parseInt(localStorage.getItem('visitorCount')) : 256;
+let visitorCount = localStorage.getItem('visitorCount') ? parseInt(localStorage.getItem('visitorCount')) : 0;
 let quranAudio = null;
 let currentService = null;
 
