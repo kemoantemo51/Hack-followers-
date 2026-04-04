@@ -257,42 +257,17 @@ body {
 
 .visitor-counter {
     text-align: center;
-    margin: 20px auto;
-    font-size: 0.85rem;
-    font-weight: bold;
+    margin: 10px 0;
+    font-size: 0.7rem;
     color: var(--neon-green);
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 8px 20px;
-    border-radius: 60px;
+    background: rgba(0,0,0,0.4);
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 50px;
     width: auto;
-    left: 50%;
-    position: relative;
-    transform: translateX(-50%);
-    border: 1px solid rgba(0, 255, 136, 0.4);
-    box-shadow: var(--glow-green);
-    transition: var(--transition-fast);
-    letter-spacing: 0.5px;
-}
-
-.visitor-counter i {
-    font-size: 1rem;
-    animation: iconPulse 1.5s infinite;
-}
-
-@keyframes iconPulse {
-    0% { opacity: 0.6; transform: scale(1); }
-    100% { opacity: 1; transform: scale(1.1); }
-}
-
-.visitor-counter:hover {
-    transform: translateX(-50%) scale(1.02);
-    border-color: var(--neon-blue);
-    box-shadow: var(--glow-blue);
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(4px);
 }
 
 .news-ticker {
@@ -1056,10 +1031,5 @@ footer {
     }
     .news-text {
         animation: ticker 35s linear infinite;
-    }
-    .visitor-counter {
-        font-size: 0.7rem;
-        padding: 5px 12px;
-        gap: 6px;
     }
 } 
