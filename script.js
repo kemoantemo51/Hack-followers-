@@ -1,4 +1,4 @@
-herelet visitorCount = localStorage.getItem('visitorCount') ? parseInt(localStorage.getItem('visitorCount')) : 2500;
+herelet visitorCount = localStorage.getItem('visitorCount') ? parseInt(localStorage.getItem('visitorCount')) : 256;
 let quranAudio = null;
 let currentService = null;
 
@@ -58,13 +58,8 @@ function showToast(msg, isError = false) {
 }
 
 function updateVisitorCount() {
-    let today = new Date().toDateString();
-    let lastVisitDate = localStorage.getItem('lastVisitDate');
-    if (lastVisitDate !== today) {
-        visitorCount++;
-        localStorage.setItem('visitorCount', visitorCount);
-        localStorage.setItem('lastVisitDate', today);
-    }
+    visitorCount++;
+    localStorage.setItem('visitorCount', visitorCount);
     let counterSpan = document.getElementById('visitorCount');
     if (counterSpan) counterSpan.textContent = visitorCount;
 }
