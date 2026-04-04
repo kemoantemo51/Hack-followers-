@@ -1,4 +1,4 @@
-let visitorCount = localStorage.getItem('visitorCount') ? parseInt(localStorage.getItem('visitorCount')) : 0;
+herelet visitorCount = localStorage.getItem('visitorCount') ? parseInt(localStorage.getItem('visitorCount')) : 258;
 let quranAudio = null;
 let currentService = null;
 
@@ -38,11 +38,11 @@ let newsMessages = [
 ];
 
 let reviews = JSON.parse(localStorage.getItem('siteReviews')) || [
-    { name: "محمد السيد", text: "خدمة رائعة وسريعة جداً! وصلتني المتابعين خلال ساعة بجودة عالية. أنصح بالتعامل معهم 👍", stars: 5, date: "2024-03-15" },
-    { name: "أحمد فتحي", text: "تعامل محترم واسعار ممتازة. جربت خدمة متابعين انستقرام والنتيجة ممتازة. شكراً لكم", stars: 5, date: "2024-03-10" },
-    { name: "نورا سمير", text: "أفضل موقع للخدمات الرقمية في مصر. سرعة في التنفيذ ودعم فني متواصل. فاموس رقم واحد 🔥", stars: 5, date: "2024-03-08" },
-    { name: "كريم وائل", text: "جربت أكثر من خدمة عندهم والحمد لله كلها ممتازة. أسعار منافسة وجودة عالية. استمروا", stars: 5, date: "2024-03-05" },
-    { name: "سارة محمود", text: "خدمة رائعة ومصداقية في التعامل. وصلتني الخدمة في وقت قياسي. أنصح الجميع بالتجربة", stars: 5, date: "2024-03-01" }
+    { name: "محمد السيد", text: "خدمة رائعة وسريعة جداً! وصلتني المتابعين خلال ساعة بجودة عالية. أنصح بالتعامل معهم 👍", stars: 5, date: "2026-03-15" },
+    { name: "أحمد فتحي", text: "تعامل محترم واسعار ممتازة. جربت خدمة متابعين انستقرام والنتيجة ممتازة. شكراً لكم", stars: 5, date: "2026-03-10" },
+    { name: "نورا سمير", text: "أفضل موقع للخدمات الرقمية في مصر. سرعة في التنفيذ ودعم فني متواصل. فاموس رقم واحد 🔥", stars: 5, date: "2026-03-08" },
+    { name: "كريم وائل", text: "جربت أكثر من خدمة عندهم والحمد لله كلها ممتازة. أسعار منافسة وجودة عالية. استمروا", stars: 5, date: "2026-03-05" },
+    { name: "سارة محمود", text: "خدمة رائعة ومصداقية في التعامل. وصلتني الخدمة في وقت قياسي. أنصح الجميع بالتجربة", stars: 5, date: "2026-03-01" }
 ];
 
 function saveReviews() {
@@ -58,8 +58,13 @@ function showToast(msg, isError = false) {
 }
 
 function updateVisitorCount() {
-    visitorCount++;
-    localStorage.setItem('visitorCount', visitorCount);
+    let today = new Date().toDateString();
+    let lastVisitDate = localStorage.getItem('lastVisitDate');
+    if (lastVisitDate !== today) {
+        visitorCount++;
+        localStorage.setItem('visitorCount', visitorCount);
+        localStorage.setItem('lastVisitDate', today);
+    }
     let counterSpan = document.getElementById('visitorCount');
     if (counterSpan) counterSpan.textContent = visitorCount;
 }
@@ -425,7 +430,7 @@ function createMainContent() {
             </div>
         </div>
         <footer>
-            <p>© 2025 FAMOUS | جميع الحقوق محفوظة</p>
+            <p>© 2026 FAMOUS | جميع الحقوق محفوظة</p>
             <div class="developer">✨ تم التطوير بواسطة كريم احمد ✨</div>
         </footer>
     `;
